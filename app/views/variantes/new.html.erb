@@ -1,0 +1,9 @@
+<h1>new</h1>
+<%= form_for @variante, :url => { :action => "create" } do |f| %>
+    <%= f.label :color %>
+    <%= f.text_field :color %>
+    <%= f.label :tamano %>
+    <%= f.text_field :tamano %>
+  
+  <%= f.submit "Create" %>
+<% end %>
