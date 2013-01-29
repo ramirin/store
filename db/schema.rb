@@ -29,13 +29,6 @@ ActiveRecord::Schema.define(:version => 20130127004800) do
     t.integer  "category_id"
   end
 
-  create_table "variables", :force => true do |t|
-    t.string   "tamano"
-    t.string   "color"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
   create_table "variantes", :force => true do |t|
     t.string   "color"
     t.string   "tamano"

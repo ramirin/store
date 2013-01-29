@@ -2,8 +2,9 @@
 <%= form_for @variante, :url => { :action => "create" } do |f| %>
     <%= f.label :color %>
     <%= f.text_field :color %>
+    <br/>
     <%= f.label :tamano %>
     <%= f.text_field :tamano %>
-  
+    <br/>
   <%= f.submit "Create" %>
 <% end %>
