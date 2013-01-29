@@ -1,7 +1,9 @@
+
 <% if product.errors.any? %>
   <h3>Uppss we have a problem</h3>
 <% end %>
 <%= form_for product do |f| %>
+
   <%= f.label :name %>
   <%= f.text_field :name %>
   <span class='error'><%= product.errors[:name].join(', ') %></span>
@@ -25,4 +27,5 @@
   <%= f.check_box :active, checked_value: true, unchecked_value: false %>
   <br/>
   <%= f.submit 'Save' %>
+
 <% end %>

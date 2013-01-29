@@ -1,4 +1,5 @@
-<h1>Product</h1>
+<h1 >Product</h1>
+
 <% if @product.nil? %>
   <h3>Product not found</h3>
 <% else %>
@@ -7,7 +8,7 @@
   <span>Name: </span><%= @product.name %>
   </p>
    <p>
-  <span>Foto: </span><%= image_tag @product.foto.url(:medium)%>
+  <span>Foto: </span><%= image_tag @product.foto.url(:thumb)%>
   </p>
   <p>
   <span>Category: </span><%= @product.try(:category).try(:name) %>
