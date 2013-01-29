@@ -6,6 +6,10 @@
   <%= f.text_field :name %>
   <span class='error'><%= product.errors[:name].join(', ') %></span>
   <br/>
+  <%= f.label :foto %>
+  <%= f.file_field :foto %>
+  <span class='error'><%= product.errors[:foto].join(', ') %></span>
+  <br/>
   <%= f.label :category_id %>
   <%= collection_select :product, :category_id, categories, :id, :name %>
   <span class='error'><%= product.errors[:category_id].join(', ') %></span>

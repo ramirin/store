@@ -6,6 +6,9 @@
   <p>
   <span>Name: </span><%= @product.name %>
   </p>
+   <p>
+  <span>Foto: </span><%= image_tag @product.foto.url(:medium)%>
+  </p>
   <p>
   <span>Category: </span><%= @product.try(:category).try(:name) %>
   </p>
