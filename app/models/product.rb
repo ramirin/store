@@ -9,6 +9,7 @@ class Product < ActiveRecord::Base
   attr_accessible :active, :description, :name, :price, :category_id, :product_id, :foto
   
   has_attached_file :foto, :styles => { :medium => "300x300>", :thumb => "100x100>" }
+  
   validates :name, :category_id, presence: true
   validates :price, :numericality => true
   validates :price, :numericality => { :only_integer => true, :greater_than => 0 }

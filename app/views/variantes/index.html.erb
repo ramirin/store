@@ -1,1 +1,16 @@
-<h1>index</h1>
+
+<h1>lista de variantes</h1>
+<span><%= flash[:notice] %></span>
+
+<ul>
+  <% @variante.each do |variante| %>
+    <h4>id: <%=variante.id%> </h4>
+    <div id='<%= "product_#{variante.id}" %>'>
+      <h4>color</h4>
+      <%= variante.color %> 
+      <h4>tamano</h4>
+      <%= variante.tamano %> 
+    </div>
+    
+  <% end %>
+</ul>

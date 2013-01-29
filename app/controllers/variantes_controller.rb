@@ -14,7 +14,8 @@ class VariantesController < ApplicationController
     @variante = @product.variantes.build(params[:variante])
     if @variante.valid?
     	@variante.save
-    #return redirect_to variants_path, notice: "Your variante #{@variante.name} has been created!"
+    
+    return redirect_to  product_variantes_path(@product), notice: "Your variante #{@variante} has been created!"
     end
   end
 
