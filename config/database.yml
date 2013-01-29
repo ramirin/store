@@ -14,7 +14,7 @@ test:
   pool: 5
   host: localhost
   username: ramirin
-  password:  214365
+  password: 214365
 
 production:
   adapter: postgresql
